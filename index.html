@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividades De Septiembre </title>
+    <title>Actividades De Septiembre</title>
     <style>
         body {
-            font-family: Arial', sans-serif;
-            background-color:#65CCD0
-
-            color: #33;
+            font-family: Arial, sans-serif;
+            background-color: #65CCD0;
+            color: #333;
             margin: 0;
             padding: 0;
         }
         header {
             background-color: #2c7ece;
-
-
-            color:white;
-        
+            color: white;
             padding: 20px;
             text-align: center;
         }
@@ -42,7 +38,7 @@
             padding: 20px;
         }
         .event {
-            background-color:#8ad2e6;
+            background-color: #8ad2e6;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
@@ -60,38 +56,90 @@
             width: 100%;
             bottom: 0;
         }
+        .comment-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .comment-form h2 {
+            margin-bottom: 20px;
+        }
+        .comment-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .comment-form textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .comment-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Actividades de septiembre</h1>
-    <p> Colegio Cristiano Peniel
-<Br> "Este mes patrio recuerda que tu valentía y tus sueños son el motor que mueve a Guatemala hacia adelante" </p>
+    <p>Colegio Cristiano Peniel
+    <br> "Este mes patrio recuerda que tu valentía y tus sueños son el motor que mueve a Guatemala hacia adelante"</p>
 </header>
     
 <section>
     <div class="event" id="event1">
-<h1>!7 de Septiembre Antorcha!</h1>
-<h2> "Hoy más que nunca, guatemala necesita jóvenes que sueñen en grande y trabajen duro para lograrlo" </h2>
-      <p>  Les recordamos que este 7 de septiembre se llevará a cabo el emocionante recorrido de la antorcha en honor a nuestras Fiestas Patrias. Nos llena de orgullo que todos podamos ser parte de este evento tan especial.¡No te lo pierdas! Llena de energía tu espíritu patriótico y únete a nosotros en esta celebración de unidad y orgullo nacional. Corre, disfruta y vive este momento con nosotros. </p> 
+        <h1>7 de Septiembre Antorcha!</h1>
+        <h2>"Hoy más que nunca, Guatemala necesita jóvenes que sueñen en grande y trabajen duro para lograrlo"</h2>
+        <p>Les recordamos que este 7 de septiembre se llevará a cabo el emocionante recorrido de la antorcha en honor a nuestras Fiestas Patrias. Nos llena de orgullo que todos podamos ser parte de este evento tan especial. ¡No te lo pierdas! Llena de energía tu espíritu patriótico y únete a nosotros en esta celebración de unidad y orgullo nacional. Corre, disfruta y vive este momento con nosotros.</p> 
+    </div>
 </section>
 <center>
-    <img src="antorcha.jpg" width="300"
-  height="341"/>
+    <img src="antorcha.jpg" width="300" height="341"/>
 </center>
-    <section>
+<section>
     <div class="event" id="event2">
-<h1>entrevistas</h1>
-<h2> Emily Gonzáles de "3ro básico" </h2>
+        <h1>Entrevistas</h1>
+        <h2>Emily Gonzáles de "3ro básico"</h2>
         <p>La experiencia fue muy agradable al compartir con mis compañeros. Fue una experiencia muy bonita porque visité Antigua Guatemala por primera vez. Es muy admirable el arte que hay y las personas que visitan son muy amables. Los sitios son muy hermosos, al igual que las calles y los paisajes.</p>
 
-<h3> Fernanda Taque "3ro Básico"</h3>
-<p> Ha sido una experiencia bonita y enriquecedora,llena de aprendizajes interesantes. He disfrutado mucho aprendiendo sobre las diferentes culturas, lo que ha sido entretenido y bello.
+        <h3>Fernanda Taque "3ro Básico"</h3>
+        <p>Ha sido una experiencia bonita y enriquecedora, llena de aprendizajes interesantes. He disfrutado mucho aprendiendo sobre las diferentes culturas, lo que ha sido entretenido y bello.</p>
+    </div>
 </section>
- 
+
+<section>
+    <div class="comment-form">
+        <h2>Deja tu comentario</h2>
+        <form action="/enviar_comentario" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" required></textarea>
+            
+            <button type="submit">Enviar Comentario</button>
+        </form>
+    </div>
+</section>
+
 <footer>
-    <p>&copy;Colegio Cristiano Peniel 2024 </p>
+    <p>&copy; Colegio Cristiano Peniel 2024</p>
 </footer>
 
 </body>
